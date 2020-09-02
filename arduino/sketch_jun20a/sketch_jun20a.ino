@@ -21,10 +21,10 @@ void setup() {
   right_motor.setEnablePin(enable_pin);
   right_motor.setPinsInverted(false, false, true);  right_motor.setMaxSpeed(36000);
   right_motor.setMaxSpeed(3600);
-  right_motor.setSpeed(1080);
+  right_motor.setSpeed(10);
 //  right_motor.setAcceleration(1200);
   left_motor.setMaxSpeed(3600);
-  left_motor.setSpeed(1080);
+  left_motor.setSpeed(10);
 //  left_motor.setAcceleration(1200);
   right_motor.enableOutputs();
   left_motor.enableOutputs();
