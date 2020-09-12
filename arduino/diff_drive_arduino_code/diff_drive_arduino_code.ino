@@ -3,10 +3,10 @@
 #include <MultiStepper.h>
 
 #define led_pin 13
-#define step_pin_right 4
-#define direction_pin_right 3
-#define step_pin_left 8
-#define direction_pin_left 7
+#define step_pin_right 11
+#define direction_pin_right 10
+#define step_pin_left 9
+#define direction_pin_left 8
 #define enable_pin 6
 
 AccelStepper right_motor(AccelStepper::DRIVER, step_pin_right, direction_pin_right);
@@ -18,13 +18,13 @@ void setup() {
   Serial.begin(9600);
   Serial.setTimeout(10);
   pinMode(led_pin, OUTPUT);
-  right_motor.setEnablePin(enable_pin);
-  right_motor.setPinsInverted(false, false, true);  right_motor.setMaxSpeed(36000);
+//  right_motor.setEnablePin(enable_pin);
+//  right_motor.setPinsInverted(false, false, true);  right_motor.setMaxSpeed(36000);
   right_motor.setMaxSpeed(3600);
-  right_motor.setSpeed(1080);
+  right_motor.setSpeed(300);
 //  right_motor.setAcceleration(1200);
   left_motor.setMaxSpeed(3600);
-  left_motor.setSpeed(1080);
+  left_motor.setSpeed(300);
 //  left_motor.setAcceleration(1200);
   right_motor.enableOutputs();
   left_motor.enableOutputs();
