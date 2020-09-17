@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+  <!-- Launch other relevant files-->
+  <include file="$(find robot_model)/launch/robot_description.launch"/>
+  
+  <!-- Find my robot Description-->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find robot_model)/urdf/robot_model.xacro'"/>
+	
+  <!--Launch serial node-->
+  <node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+		<param name="port" value="/dev/ttyACM0"/>
+  </node>
+  
+  <!--Launch kinect node-->
+  <include file="$(find freenect_launch)/launch/freenect.launch" />
+	<node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan">
+		<remap from="image" to="camera/depth/image_raw" />
+  </node>
+  
+</launch>
