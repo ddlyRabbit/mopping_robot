@@ -1,8 +1,0 @@
-prefix=/home/abhinavroy/robotics_learn/mopping_robot/ros/devel
-
-Name: rosserial_chibios
-Description: Description of rosserial_chibios
-Version: 0.9.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

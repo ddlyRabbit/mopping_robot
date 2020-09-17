@@ -1,8 +1,0 @@
-prefix=/home/abhinavroy/robotics_learn/mopping_robot/ros/devel
-
-Name: rosserial_python
-Description: Description of rosserial_python
-Version: 0.9.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
