@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/mopping_robot/ros/install
+
+Name: robot_model
+Description: Description of robot_model
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/mopping_robot/ros/install
+
+Name: cliff_detector
+Description: Description of cliff_detector
+Version: 1.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lCliffDetector -lCliffDetectorNode
+Requires: roscpp image_geometry image_transport nodelet dynamic_reconfigure sensor_msgs depth_nav_msgs

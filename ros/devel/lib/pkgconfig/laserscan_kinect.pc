@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/mopping_robot/ros/devel
+
+Name: laserscan_kinect
+Description: Description of laserscan_kinect
+Version: 1.0.1
+Cflags: -I/home/ubuntu/mopping_robot/ros/devel/include -I/home/ubuntu/mopping_robot/ros/src/depth_nav_tools/laserscan_kinect/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include -I/usr/include/opencv
+Libs: -L${prefix}/lib -lLaserScanKinect -lLaserScanKinectNode
+Requires: roscpp image_geometry image_transport nodelet dynamic_reconfigure sensor_msgs

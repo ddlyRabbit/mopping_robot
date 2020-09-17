@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/mopping_robot/ros/install
+
+Name: nav_layer_from_points
+Description: Description of nav_layer_from_points
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcostmap_layers
+Requires: roscpp costmap_2d dynamic_reconfigure geometry_msgs depth_nav_msgs tf
